@@ -59,10 +59,12 @@ class App extends React.Component {
     }
 }
 
+// Get an specific object from the state in the store
 const mapStateToProps = ({user}) => ({
     currentUser: user.currentUser
 });
 
+// Send an action to the reducer
 const mapDispatchToProps = dispatch => ({
     setCurrentUser: user => dispatch(setCurrentUser(user))
 });
